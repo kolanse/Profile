@@ -1,8 +1,15 @@
-const Search =() => {
-    return(
-        <div className="search">
+import React from "react";
+import "./search.styles.css";
 
-        </div>
+
+const Search =({onChange, placeholder}) => {
+    return(
+        <input
+        className="search"
+        type="search"
+        placeholder={placeholder}
+        onChange={onChange}
+        />
     )
 }
-export default Search;
+export default Search
